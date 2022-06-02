@@ -1,5 +1,5 @@
 :root {
-  --logo-text-font: 'Raleway';
+  --logo-text-font: 'Raleway', sans-serif;
   --primary-font: 'Roboto', sans-serif;
   --nohover-navlink-color: #212121;
   --hover-cont-link: #2196f3;
@@ -8,6 +8,8 @@
   --button-text-color: #ffffff;
   --title-text-color: #212121;
   --accent-bg-color: #ffffff;
+  --hero-bg-color: #c4c4c4;
+  --team-section-bgcolor: #f5f4fa;
   --card-set-gap: 30px;
 }
 /* Глобальные стили */
@@ -144,10 +146,11 @@ li {
   display: flex;
 }
 .connect .item + .item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .conn-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
@@ -155,6 +158,11 @@ li {
 .conn-link:hover,
 .conn-link:focus {
   color: var(--hover-cont-link);
+}
+.i-email,
+.i-smart {
+  fill: currentColor;
+  margin-right: 10px;
 }
 /* Секция подвал сайта */
 .footer {
@@ -186,10 +194,19 @@ li {
 /* Секция страницы WebStudio */
 /* Секция hero с заказом услуг */
 .hero {
-  background-color: #2f303a;
-  min-height: 600px;
+  margin: 0 auto;
+  max-height: 600px;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+.hero.overlay {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Hero.jpg);
+  background-color: var(--hero-bg-color);
 }
 .hero .container {
   width: 696px;
@@ -263,8 +280,7 @@ li {
 }
 /* Секция Наша команда */
 .team {
-  background-color: #f5f4fa;
-  text-align: center;
+  background-color: var(--team-section-bgcolor);
 }
 .team-title {
   margin-bottom: 50px;
@@ -299,6 +315,24 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 10px;
+}
+
+/* секция Постоянные клиенты */
+.customers-title {
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+}
+.customers-list {
+  display: flex;
+}
+.customers-item {
+  outline: 1px solid tan;
+  background-color: #212121;
+  max-width: 170px;
+  max-height: 72px;
+}
+.customers-item:nth-child(n + 2) {
+  margin-left: var(--card-set-gap);
 }
 
 /* Секция страницы Portfolio */
