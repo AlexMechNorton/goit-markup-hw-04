@@ -291,6 +291,7 @@ li {
 }
 /* Секция Наша команда */
 .team {
+  text-align: center;
   background-color: var(--team-section-bgcolor);
 }
 .team-title {
