@@ -13,6 +13,8 @@
   --team-social-link: #afb1b8;
   --team-social-link-hover: #ffffff;
   --team-soc-bg-hover: #2196f3;
+  --customers-color: #afb1b8;
+  --customers-hover-color: #2196f3;
   --card-set-gap: 30px;
 }
 /* Глобальные стили */
@@ -332,7 +334,6 @@ li {
 /* Team social link */
 .team-icon {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   margin-top: 16px;
 }
@@ -366,13 +367,24 @@ li {
   display: flex;
 }
 .customers-item {
-  outline: 1px solid tan;
-  background-color: #212121;
-  max-width: 170px;
-  max-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* outline: 1px solid tan;
+  background-color: #212121; */
+  width: 170px;
+  height: 72px;
+  border: 1px solid var(--customers-color);
+  border-radius: 4px;
+  fill: var(--customers-color);
 }
 .customers-item:nth-child(n + 2) {
   margin-left: var(--card-set-gap);
+}
+.customers-item:hover,
+.customers-item:focus {
+  border: 1px solid var(--customers-hover-color);
+  fill: var(--customers-hover-color);
 }
 
 /* Секция страницы Portfolio */
