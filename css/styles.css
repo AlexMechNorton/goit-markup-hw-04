@@ -15,6 +15,9 @@
   --team-soc-bg-hover: #2196f3;
   --customers-color: #afb1b8;
   --customers-hover-color: #2196f3;
+  --footer-title: #ffffff;
+  --fsocial-icon-color: #ffffff;
+  --fsocial-link-hover: #2196f3;
   --card-set-gap: 30px;
 }
 /* Глобальные стили */
@@ -175,6 +178,9 @@ li {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer .container {
+  display: flex;
+}
 .address {
   font-style: normal;
   font-size: 14px;
@@ -194,6 +200,46 @@ li {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--hover-cont-link);
+}
+.primary-fsection {
+  min-width: 231px;
+}
+.second-fsection {
+  margin-left: 70px;
+  padding-top: 15px;
+}
+.footer-title {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--footer-title);
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  display: flex;
+}
+.fsocial-list:nth-child(n + 2) {
+  margin-left: 10px;
+}
+.fsocial-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.fsocial-icon {
+  fill: var(--fsocial-icon-color);
+}
+.fsocial-link:hover,
+.fsocial-link:focus {
+  background: var(--fsocial-link-hover);
 }
 /* Стили отдельных страниц */
 /* Секция страницы WebStudio */
@@ -445,8 +491,6 @@ li {
 }
 .port-item:hover,
 .port-item:focus {
-  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12); */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
