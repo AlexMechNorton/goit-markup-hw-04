@@ -201,6 +201,10 @@ li {
 .footer-contacts:focus {
   color: var(--hover-cont-link);
 }
+.address-color:hover,
+.address-color:focus {
+  color: var(--hover-cont-link);
+}
 .primary-fsection {
   min-width: 231px;
 }
