@@ -180,6 +180,7 @@ li {
 }
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 .address {
   font-style: normal;
